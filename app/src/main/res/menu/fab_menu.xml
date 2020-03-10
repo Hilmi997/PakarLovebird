@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/fab_gejala"
+        android:title="@string/add_gejala" />
+    <item
+        android:id="@+id/fab_penyakit"
+        android:title="@string/add_penyakit"/>
+    <item
+        android:id="@+id/fab_rulebase"
+        android:title="@string/add_rule_base" />
+
+
+</menu>

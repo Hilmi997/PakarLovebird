@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hilmi.sistempakar.view.activity.HasilKonsultasi">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/footer">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:foregroundGravity="center"
+        android:id="@+id/linearLayout"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Berdasarkan konsultasi yang telah dilakukan, maka : "
+            android:textColor="@color/colorPrimary"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tvResultNamaPenyakit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Nama Penyakit"
+            android:textColor="@color/black"
+            android:textSize="28sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gejala : "
+            android:textColor="@color/colorPrimary"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tvResultNamaGejala"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nama Gejala"
+            android:textColor="@color/black"
+            android:textSize="28sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/blue"
+            android:text="Solusi" />
+
+        <TextView
+            android:id="@+id/tvResultSolusi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgKonsultasi"
+            android:textColor="@color/black"
+            android:textSize="28sp"
+            android:text="Solusi" />
+    </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/footer"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:foregroundGravity="bottom"
+        android:layout_alignParentBottom="true"
+        android:gravity="bottom">
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/ads_banner_medium_sdk">
+        </com.google.android.gms.ads.AdView>
+        <Button
+            android:id="@+id/btnPeriksaUlang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:background="@color/blue"
+            android:backgroundTintMode="multiply"
+            android:layout_alignParentBottom="true"
+            android:text="Periksa Ulang"/>
+
+        <Button
+            android:id="@+id/btnSelesai"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:background="@color/red"
+            android:layout_alignParentBottom="true"
+            android:backgroundTintMode="multiply"
+            android:text="Selesai"/>
+    </LinearLayout>
+</RelativeLayout>
